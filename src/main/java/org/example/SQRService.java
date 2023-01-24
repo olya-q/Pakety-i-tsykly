@@ -1,15 +1,18 @@
 package org.example;
 
 public class SQRService {
-    public int calcSqr(int x, int y) {
-        for (int i = 1; i < y; i++) {
-            if (i * i < x) {
-                continue;
-            }
-            if (i * i <= y) {
-                return(i);
+    public int calcSqr(int min, int max) {
+        int counter = 0;
+
+
+        for (int i = 10; i <= 99; i++) {
+            int iSquare = i * i;
+            if (iSquare >= min) {
+                if (iSquare <= max) {
+                    counter++;
+                }
             }
         }
-        return -1;
+        return counter;
     }
 }
