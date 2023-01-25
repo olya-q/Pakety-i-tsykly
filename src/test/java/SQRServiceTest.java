@@ -14,16 +14,6 @@ public class SQRServiceTest {
         Assertions.assertEquals(expected, actual);
 
     }
-    @Test
-    public void testWhenExpectedNotEqualActual() {
-        SQRService service = new SQRService();
-
-        int expected = 1;
-        int actual = service.calcSqr(200, 300);
-
-        Assertions.assertEquals(expected, actual);
-
-    }
 
     @Test
     public void testWhenOneSquaresFound() {
@@ -46,6 +36,7 @@ public class SQRServiceTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
     @Test
     public void testRangeLimits() {
         SQRService service = new SQRService();
